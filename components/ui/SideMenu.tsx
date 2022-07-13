@@ -1,15 +1,25 @@
 import { Box, Divider, Drawer, IconButton, Input, InputAdornment, List, ListItem, ListItemIcon, ListItemText, ListSubheader } from "@mui/material"
-import { QuizOutlined, HomeOutlined, AttachEmailOutlined, CollectionsOutlined, EscalatorWarningOutlined, FemaleOutlined, MaleOutlined, SearchOutlined, VpnKeyOutlined } from "@mui/icons-material"
+import { QuizOutlined, HomeOutlined, AttachEmailOutlined, CollectionsOutlined, EscalatorWarningOutlined, FemaleOutlined, MaleOutlined, SearchOutlined, CloseOutlined } from "@mui/icons-material"
 
 
 export const SideMenu = () => {
   return (
     <Drawer
-        open={ false }
+        open={ true }
         anchor='right'
         sx={{ backdropFilter: 'blur(4px)', transition: 'all 0.5s ease-out' }}
     >
-        <Box sx={{ width: 250, paddingTop: 5 }}>
+        <Box sx={{ width: 250, paddingTop: 1 }}>
+
+            <Box 
+                display='flex' 
+                flexDirection='row-reverse'
+                sx={{ paddingRight: 1 }}
+            >
+                <IconButton>
+                    <CloseOutlined />
+                </IconButton>
+            </Box>
             
             <List>
 
