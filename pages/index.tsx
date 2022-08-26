@@ -2,9 +2,15 @@ import { Box, Card, CardActionArea, CardMedia, Grid, Typography } from '@mui/mat
 import type { NextPage } from 'next';
 import { MainLayout } from '../components/layouts';
 
+const origin = ( typeof window === 'undefined' ) ? '' : window.location.origin;
+
 const Home: NextPage = () => {
     return (
-        <MainLayout title={'Wicho García - Home'} pageDescription={'Aquí encontraras información importante acerca de los lugares más bonitos de Guatemala y el mundo'}>
+        <MainLayout 
+            title={'Wicho García - Home'} 
+            pageDescription={'Aquí encontraras información y fotografías de los lugares más hermosos que tiene Guatemala, ¡bienvenido!'}
+            imageFullUrl={ `${ origin }/img/banner.jpg` }
+        >
 
             <Box 
                 display='flex' 

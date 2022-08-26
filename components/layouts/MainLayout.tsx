@@ -16,7 +16,9 @@ export const MainLayout:FC<Props> = ({ children, title, pageDescription, imageFu
             <Head>
                 <title>{ title }</title>
 
+                <meta name="author" content="Wicho García" />
                 <meta name='description' content={ pageDescription } />
+                <meta name="keywords" content="guatemala, fotografía, naturaleza, volcanes, montañas, chapin, 502, wicho" />
 
                 <meta name='og:title' content={ title } />
                 <meta name='og:description' content={ pageDescription } />
