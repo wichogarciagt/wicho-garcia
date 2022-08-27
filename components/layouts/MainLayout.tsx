@@ -20,6 +20,8 @@ export const MainLayout:FC<Props> = ({ children, title, pageDescription, imageFu
                 <meta name='description' content={ pageDescription } />
                 <meta name="keywords" content="guatemala, fotografía, naturaleza, volcanes, montañas, chapin, 502, wicho" />
 
+                <meta property="og:url" content="https://www.wichogarcia.com/" />
+                <meta property="og:type" content="article" />
                 <meta name='og:title' content={ title } />
                 <meta name='og:description' content={ pageDescription } />
 
