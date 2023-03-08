@@ -1,4 +1,5 @@
 import { Box, Card, CardActionArea, CardMedia, Grid, Typography } from '@mui/material';
+import { Masonry } from '@mui/lab';
 import type { NextPage } from 'next';
 import { MainLayout } from '../components/layouts';
 
@@ -22,6 +23,10 @@ const Home: NextPage = () => {
                 <Typography variant='h1' component='h1' fontSize={ 50 } fontWeight={ 200 }>Home |</Typography>
                 <Typography marginLeft={ 2 }>Gracias por visitar Wicho Garcia, estamos trabajando en algo bonito sobre Guatemala! </Typography>
             </Box>
+
+            <Masonry columns={4} spacing={2}>
+
+            </Masonry>
 
         </MainLayout>
     )
