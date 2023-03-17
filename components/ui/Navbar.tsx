@@ -1,7 +1,7 @@
 import NextLink from 'next/link';
 
 import { AppBar, Badge, Box, Button, IconButton, Link, Toolbar, Typography } from '@mui/material';
-import { ShoppingCartOutlined, SearchOutlined } from '@mui/icons-material';
+import { ShoppingCartOutlined, SearchOutlined, MenuOutlined } from '@mui/icons-material';
 import { useContext } from 'react';
 import { UIContext } from '../../context/ui';
 
@@ -28,9 +28,15 @@ export const Navbar = () => {
                         </Link>
                     </NextLink>
 
-                    <NextLink href='/gallery' passHref>
+                    <NextLink href='/photography' passHref>
                         <Link>
                             <Button>Galería</Button>
+                        </Link>
+                    </NextLink>
+
+                    <NextLink href='/about' passHref>
+                        <Link>
+                            <Button>Acerca de mí</Button>
                         </Link>
                     </NextLink>
 
@@ -65,7 +71,7 @@ export const Navbar = () => {
                 </NextLink> */}
 
                 <Button onClick={ openSideMenu }>
-                    Menú
+                    <MenuOutlined />
                 </Button>
 
             </Toolbar>
