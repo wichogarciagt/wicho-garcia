@@ -1,5 +1,4 @@
-import { Box, Card, CardActionArea, CardMedia, Grid, Typography } from '@mui/material';
-import { Masonry } from '@mui/lab';
+import { Box, Typography } from '@mui/material';
 import type { NextPage } from 'next';
 import { MainLayout } from '../components/layouts';
 
@@ -10,23 +9,33 @@ const Home: NextPage = () => {
         <MainLayout 
             title={'Wicho García - Home'} 
             pageDescription={'Aquí encontraras información y fotografías de los lugares más hermosos que tiene Guatemala, ¡bienvenido!'}
-            imageFullUrl={ `${ origin }/img/banner.jpg` }
+            imageFullUrl={ `${ origin }/img/main.jpg` }
         >
 
-            <Box 
-                display='flex' 
-                justifyContent='center' 
-                alignItems='center' 
-                height='calc(100vh - 200px)'
-                sx={{ flexDirection: { xs: 'column', sm: 'row' } }}
+        <Box
+            sx={{
+                backgroundImage: 'url("img/main.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                width: '100%',
+                height: '100vh',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}
             >
-                <Typography variant='h1' component='h1' fontSize={ 50 } fontWeight={ 200 }>Home |</Typography>
-                <Typography marginLeft={ 2 }>Gracias por visitar Wicho Garcia, estamos trabajando en algo bonito sobre Guatemala! </Typography>
-            </Box>
+                <Box display='flex' flexDirection='column' alignItems='center'>
 
-            <Masonry columns={4} spacing={2}>
+                    <Typography variant="h1" component='h1' align="center" color='white'>
+                        Viaja, vive, aventurate
+                    </Typography>
 
-            </Masonry>
+                    <Typography marginTop={ 2 } variant="h2" component='h2' align="center" color='white'>
+                        Fotógrafo - Creador de contenido
+                    </Typography>
+
+                </Box>
+        </Box>
 
         </MainLayout>
     )

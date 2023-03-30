@@ -70,9 +70,16 @@ export const Navbar = () => {
                     </Link>
                 </NextLink> */}
 
-                <Button onClick={ openSideMenu }>
+                <IconButton onClick={ openSideMenu }>
                     <MenuOutlined />
-                </Button>
+                </IconButton>
+
+                {/* <Button 
+                    onClick={ openSideMenu }
+                    sx={{ p: 1, m: 1 }}
+                >
+                    <MenuOutlined />
+                </Button> */}
 
             </Toolbar>
         </AppBar>
