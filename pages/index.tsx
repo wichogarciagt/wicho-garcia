@@ -26,11 +26,11 @@ const Home: NextPage = () => {
             >
                 <Box display='flex' flexDirection='column' alignItems='center'>
 
-                    <Typography variant="h1" component='h1' align="center" color='white'>
+                    <Typography variant="h4" component='h4' align="center" color='white' fontWeight={600}>
                         Viaja, vive, aventurate
                     </Typography>
 
-                    <Typography marginTop={ 2 } variant="h2" component='h2' align="center" color='white'>
+                    <Typography marginTop={ 2 } variant="h5" component='h5' align="center" color='white'>
                         Fotógrafo - Creador de contenido
                     </Typography>
 
